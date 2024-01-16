@@ -5,7 +5,7 @@ import { View, Text } from 'react-native';
 const Home = () => {
     return (
         <View>
-            <Text>Home</Text>
+            <Text>Hello World! this is my first react native app</Text>
         </View>
     );
 }
