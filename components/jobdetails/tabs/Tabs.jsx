@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
-import styles from "./Tabs.style";
+
+import styles from "./tabs.style";
 
 const Tabs = () => {
     return (

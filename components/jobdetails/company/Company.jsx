@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
-import styles from "./Company.style";
+
+import styles from "./company.style";
 
 const Company = () => {
     return (

@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+
 import { colors, sizes, shadows } from "../../../../constants";
 
 const styles = StyleSheet.create({
@@ -9,7 +10,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         padding: sizes.medium,
         borderRadius: sizes.small,
-        backgroundColor: "#fff",
+        backgroundColor: "#FFF",
         ...shadows.medium,
         shadowColor: colors.white,
     },

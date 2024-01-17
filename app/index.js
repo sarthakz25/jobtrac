@@ -1,12 +1,45 @@
-import { View, Text } from 'react-native';
+import { useState } from "react";
+import { View, ScrollView, SafeAreaView } from "react-native";
+import { Stack, useRouter } from "expo-router";
 
-// we can assume view as div and text as p or h tag
+import { icons, colors, font, sizes, images } from "../constants";
+import { NearbyJobs, PopularJobs, ScreenHeaderButton, Welcome } from "../components";
 
 const Home = () => {
+    const router = useRouter();
+
     return (
-        <View>
-            <Text>Hello World! this is my first react native app</Text>
-        </View>
+        <SafeAreaView style={{ flex: 1, backgroundColor: colors.lightWhite }}>
+            <Stack.Screen
+                options={{
+                    headerStyle: { backgroundColor: colors.lightWhite },
+                    headerShadowVisible: false,
+                    headerLeft: () => (
+                        <ScreenHeaderButton iconUrl={icons.menu} dimension="60%" />
+                    ),
+                    headerRight: () => (
+                        <ScreenHeaderButton iconUrl={images.profile} dimension="100%" />
+                    ),
+                    headerTitle: "",
+                }}
+            />
+
+            <ScrollView showsVerticalScrollIndicator={false}>
+                <View
+                    style={{
+                        flex: 1,
+                        padding: sizes.medium,
+                    }}
+                >
+                    <Welcome
+
+                    />
+
+                    <PopularJobs />
+                    <NearbyJobs />
+                </View>
+            </ScrollView>
+        </SafeAreaView>
     );
 }
 

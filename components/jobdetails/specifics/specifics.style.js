@@ -1,10 +1,11 @@
 import { StyleSheet } from "react-native";
+
 import { colors, font, sizes } from "../../../constants";
 
 const styles = StyleSheet.create({
     container: {
         marginTop: sizes.large,
-        backgroundColor: "#fff",
+        backgroundColor: "#FFF",
         borderRadius: sizes.medium,
         padding: sizes.medium,
     },

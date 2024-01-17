@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+
 import { colors, shadows, sizes } from "../../../constants";
 
 const styles = StyleSheet.create({
@@ -18,7 +19,7 @@ const styles = StyleSheet.create({
     buttonText: (name, activeTab) => ({
         fontFamily: "DMMedium",
         fontSize: sizes.small,
-        color: name === activeTab ? "#c3bfcc" : "#aaa9b8",
+        color: name === activeTab ? "#C3BFCC" : "#AAA9B8",
     }),
 });
 

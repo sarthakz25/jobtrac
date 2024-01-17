@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+
 import { colors, sizes, font } from "../../../constants";
 
 const styles = StyleSheet.create({
@@ -12,7 +13,7 @@ const styles = StyleSheet.create({
         height: 80,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#fff",
+        backgroundColor: "#FFF",
         borderRadius: sizes.large,
     },
     logoImage: {

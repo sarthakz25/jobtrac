@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+
 import { colors, font, sizes } from "../../../constants";
 
 const styles = StyleSheet.create({
@@ -8,7 +9,7 @@ const styles = StyleSheet.create({
         left: 0,
         right: 0,
         padding: sizes.small,
-        backgroundColor: "#fff",
+        backgroundColor: "#FFF",
         justifyContent: "space-between",
         alignItems: "center",
         flexDirection: "row",
@@ -17,7 +18,7 @@ const styles = StyleSheet.create({
         width: 55,
         height: 55,
         borderWidth: 1,
-        borderColor: "#f37453",
+        borderColor: "#F37453",
         borderRadius: sizes.medium,
         justifyContent: "center",
         alignItems: "center",
@@ -25,11 +26,11 @@ const styles = StyleSheet.create({
     likeButtonImage: {
         width: "40%",
         height: "40%",
-        tintColor: "#f37453",
+        tintColor: "#F37453",
     },
     applyButton: {
         flex: 1,
-        backgroundColor: "#fe7654",
+        backgroundColor: "#FE7654",
         height: "100%",
         justifyContent: "center",
         alignItems: "center",
