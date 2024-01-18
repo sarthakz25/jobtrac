@@ -13,31 +13,30 @@ import styles from "./welcome.style";
 import { icons, sizes } from "../../../constants";
 
 
-const jobTypes = ["Full-time", "Part-time", "Contractor"];
+const jobTypes = ["Full-time", "Part-time", "Internship", "Remote"];
 
-const Welcome = () => {
+const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
     const router = useRouter();
-
     const [activeJobType, setActiveJobType] = useState("Full-time");
 
     return (
         <View>
             <View style={styles.container}>
-                <Text style={styles.userName}>Hello user</Text>
-                <Text style={styles.welcomeMessage}>Find your dream job</Text>
+                <Text style={styles.userName}>Hello user,</Text>
+                <Text style={styles.welcomeMessage}>Find your perfect job</Text>
             </View>
 
             <View style={styles.searchContainer}>
                 <View style={styles.searchWrapper}>
                     <TextInput
                         style={styles.serachInput}
-                        value=""
-                        onChange={() => { }}
+                        value={searchTerm}
+                        onChangeText={(text) => setSearchTerm(text)}
                         placeholder="What are you looking for?"
                     />
                 </View>
 
-                <TouchableOpacity style={styles.searchButton} onPress={() => { }}>
+                <TouchableOpacity style={styles.searchButton} onPress={handleClick}>
                     <Image
                         source={icons.search}
                         resizeMode="contain"
@@ -61,7 +60,7 @@ const Welcome = () => {
                         </TouchableOpacity>
                     )}
                     keyExtractor={item => item}
-                    contentContainerStyle={{ columnGap: sizes.small }}
+                    contentContainerStyle={{ columnGap: sizes.medium / 2 }}
                     horizontal
                 />
             </View>

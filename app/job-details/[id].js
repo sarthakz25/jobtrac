@@ -4,7 +4,8 @@ import {
     SafeAreaView,
     ScrollView,
     ActivityIndicator,
-    RefreshControl
+    RefreshControl,
+    Share
 } from "react-native";
 import { Stack, useRouter, useGlobalSearchParams } from "expo-router";
 import { useCallback, useState } from "react";
@@ -73,7 +74,7 @@ const JobDetails = () => {
                         <ScreenHeaderButton
                             iconUrl={icons.share}
                             dimension={"60%"}
-                            handlePress={() => router.back()}
+                            url={data[0]?.job_google_link}
                         />
                     ),
                 }}
