@@ -8,6 +8,17 @@
       "expo-router"
     ],
     "name": "jobtrac",
-    "slug": "jobtrac"
+    "slug": "jobtrac",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "30c43c3c-943a-44f9-a481-f7ad1e58876c"
+      }
+    },
+    "android": {
+      "package": "com.sarthakz25.jobtrac"
+    }
   }
 }
